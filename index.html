@@ -46,6 +46,18 @@ body {
   object-fit: cover; /* Escala la imagen manteniendo proporciones */
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
 /* Estilo de los títulos principales */
 h2 {
   font-size: 36px; /* Tamaño del texto del título */
@@ -233,6 +245,17 @@ p {
       .btn {
         padding: 8px 15px;
       }
+      img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 80%; /* Cambia el tamaño para pantallas más pequeñas */
+    }
+}
+
 
       iframe {
         width: 90%;
@@ -248,6 +271,9 @@ p {
   </div>
   <h1>Busva Home Broker</h1>
   <p>En Busva Home Broker, somos una empresa líder en la venta de propiedades de remate bancario con más de 10 años de experiencia en el mercado. Nos especializamos en ofrecer soluciones inmobiliarias de alta calidad, con un enfoque claro en la transparencia, seguridad y accesibilidad. Nuestra misión es facilitar la compra de propiedades a precios competitivos, asegurando que nuestros clientes tengan una experiencia de compra sencilla y confiable.</p>
+</div>
+<div class="image-container">
+  <img src="tu-imagen.jpg" alt="Descripción de la imagen">
 </div>
 
 <!-- Sección de "¿Por qué elegirnos?" -->
